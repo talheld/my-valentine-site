@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Valentine Quest</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="sparkle-overlay" aria-hidden="true"></div>
+
+    <main class="page">
+      <header class="hero">
+        <p class="kicker">Totally 90's • Super Sparkly • Extra Pink</p>
+        <h1 class="title">Valentine Quest</h1>
+        <p class="subtitle">A tiny adventure made with lots of love</p>
+      </header>
+
+      <section id="login" class="card show">
+        <h2 class="card-title">Secret Login</h2>
+        <p class="card-note">Only the cutest heart-holder can enter.</p>
+        <form id="login-form" class="form">
+          <label class="field">
+            <span>Her Email</span>
+            <input id="email" type="email" placeholder="her@email.com" required />
+          </label>
+          <label class="field">
+            <span>Secret Password</span>
+            <input id="password" type="password" placeholder="••••••" required />
+          </label>
+          <button type="submit" class="btn glow">Unlock</button>
+          <p id="login-error" class="error" role="alert"></p>
+        </form>
+      </section>
+
+      <section id="treasure" class="card">
+        <h2 class="card-title">Treasure Time</h2>
+        <p class="card-note">Tap the box to reveal the magical scroll.</p>
+        <button id="treasure-btn" class="treasure" type="button" aria-label="Open treasure box">
+          <span class="treasure-lid"></span>
+          <span class="treasure-base"></span>
+          <span class="treasure-gem"></span>
+        </button>
+        <div id="scroll" class="scroll hidden" role="dialog" aria-modal="true">
+          <p class="scroll-title">Tiny Question</p>
+          <p id="question-text" class="scroll-question"></p>
+          <form id="question-form" class="form">
+            <label class="field">
+              <span>Your Answer</span>
+              <input id="answer" type="text" placeholder="Say the magic words" required />
+            </label>
+            <button type="submit" class="btn">Reveal</button>
+            <p id="question-error" class="error" role="alert"></p>
+          </form>
+        </div>
+      </section>
+
+      <section id="final" class="card final">
+        <div class="hearts" aria-hidden="true"></div>
+        <div class="stickers" aria-hidden="true">
+          <span>💗</span>
+          <span>✨</span>
+          <span>🧁</span>
+          <span>🎀</span>
+          <span>🌸</span>
+          <span>🦄</span>
+          <span>🍭</span>
+          <span>💫</span>
+        </div>
+        <h2 class="final-title">The last thing is waiting for U at Talu's</h2>
+        <p class="final-note">Love you endlessly.</p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
